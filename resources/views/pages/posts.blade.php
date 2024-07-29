@@ -3,7 +3,9 @@
 
     <x-search></x-search>
 
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
+    {{ $posts->links() }}
+
+    <div class="my-4 py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-0">
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             @forelse ($posts as $post)
                 <article
@@ -18,7 +20,7 @@
                         <span class="text-sm">{{ $post->created_at->diffForHumans() }}</span>
                     </div>
                     <a href="/posts/{{ $post->slug }}">
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline">
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 hover:underline">
                             {{ $post->title }}
                         </h2>
                     </a>
@@ -29,7 +31,7 @@
                                 <img class="w-7 h-7 rounded-full"
                                     src="https://picsum.photos/id/{{ $post->author->id }}/200/300"
                                     alt="{{ $post->author->name }}" />
-                                <span class="font-medium text-sm dark:text-white hover:underline">
+                                <span class="font-medium text-sm hover:underline">
                                     {{ $post->author->name }}
                                 </span>
                             </div>
@@ -63,4 +65,7 @@
             @endforelse
         </div>
     </div>
+
+    {{ $posts->links() }}
+
 </x-layout>

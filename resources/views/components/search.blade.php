@@ -1,11 +1,11 @@
 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div class="mx-auto max-w-screen-md sm:text-center">
-        <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
-            Explore Our Blog
+        <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            Explore Our Articles
         </h2>
         <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
-            Stay updated with the latest blog posts, insights, and exclusive content. Sign up with your email to never
-            miss an update.
+            Discover insightful articles on a variety of topics. Use the search bar below to find specific articles or
+            explore by category and author.
         </p>
         <form autocomplete="off">
             @if (request('category'))
@@ -29,7 +29,7 @@
 
                     </div>
                     <input
-                        class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Search for articles" type="search" name="search">
                 </div>
                 <div>
@@ -39,9 +39,10 @@
             </div>
             <div
                 class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
-                We care about the protection of your data. <a href="#"
+                Your privacy is important to us. <a href="#"
                     class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy
-                    Policy</a>.</div>
+                    Policy</a>.
+            </div>
         </form>
     </div>
 </div>

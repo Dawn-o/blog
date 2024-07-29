@@ -1,9 +1,6 @@
 <?php
 
-use App\Models\Category;
 use App\Models\Post;
-use App\Models\User;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,7 +12,14 @@ Route::get('/', function () {
 Route::get('/posts', function () {
     return view('pages.posts', [
         'title' => 'Blog',
-        'posts' => Post::filter(request(['search', 'category', 'author']))->latest()->get(),
+        'posts' => Post::filter(request(['search', 'category', 'author']))->latest()->paginate(5)->withQueryString()
+    ]);
+});
+
+Route::get('/posts/{post:slug}', function (Post $post) {
+    return view('pages.post', [
+        'title' => 'Single Post',
+        'post' => $post,
     ]);
 });
 
@@ -25,4 +29,8 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('pages.contact', ['title' => 'Contact']);
+});
+
+Route::fallback(function(){
+    return view('errors.404', ['title' => '???']);
 });
