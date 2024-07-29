@@ -22,12 +22,12 @@
                                 src="https://picsum.photos/id/{{ $post->author->id }}/200/300"
                                 alt="{{ $post->author->name }}">
                             <div>
-                                <a href="/authors/{{ $post->author->username }}" rel="author"
+                                <a href="/posts?author={{ $post->author->username }}" rel="author"
                                     class="text-xl font-bold text-gray-900 dark:text-white hover:underline">{{ $post->author->name }}</a>
                                 <p class="text-base text-gray-500 dark:text-gray-400 mb-1">
                                     {{ $post->created_at->format('j F Y') }}
                                 </p>
-                                <a href="/categories/{{ $post->category->slug }}">
+                                <a href="/posts?category={{ $post->category->slug }}">
                                     <span
                                         class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                                         {{ $post->category->name }}
