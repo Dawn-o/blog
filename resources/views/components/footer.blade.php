@@ -16,7 +16,7 @@
             <span class="sr-only">Facebook</span>
         </a>
         <div id="tooltip-facebook" role="tooltip"
-            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
             Like us on Facebook
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
@@ -30,7 +30,7 @@
             <span class="sr-only">Twitter</span>
         </a>
         <div id="tooltip-twitter" role="tooltip"
-            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
             Follow us on Twitter
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
@@ -45,7 +45,7 @@
             <span class="sr-only">Github</span>
         </a>
         <div id="tooltip-github" role="tooltip"
-            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
             Star us on GitHub
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
@@ -60,7 +60,7 @@
             <span class="sr-only">Dribbble</span>
         </a>
         <div id="tooltip-dribbble" role="tooltip"
-            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip bg-gray-700">
             Follow us on Dribbble
             <div class="tooltip-arrow" data-popper-arrow></div>
         </div>
